@@ -2,20 +2,20 @@
     :target: https://www.gnu.org/licenses/lgpl-3.0-standalone.html
     :alt: License: LGPL-3
 
-Notificación push desde ChatBox
-===============================
-# 📝 Traductor automático de archivos `.po` para módulos de Odoo (vía Google Translate)
+📝 Traductor automático de archivos `.po` para módulos de Odoo (vía Google Translate)
+=====================================================================================
+
 
 Este script permite traducir automáticamente archivos `.po` de módulos de Odoo utilizando Google Translate mediante scraping ligero (sin necesidad de claves API). Es especialmente útil para módulos comunitarios que están solo en inglés y necesitan ser localizados rápidamente.
 
-## 🚀 ¿Para qué sirve?
+🚀 ¿Para qué sirve?
 
 - Traducir al español (o cualquier otro idioma) los archivos `.po` de módulos de Odoo que vienen sin localización.
 - Rellenar automáticamente los campos `msgstr` vacíos con la traducción correspondiente del `msgid`.
 - Evitar la dependencia de APIs de pago como Google Cloud o DeepL.
 - Ahorrar tiempo y esfuerzo en la localización de módulos, tanto para entornos de desarrollo como para producción.
 
-## ⚙️ Características
+⚙️ Características
 
 - ✅ Traducción automática usando el endpoint web de Google Translate (no oficial).
 - ✅ Solo traduce las entradas vacías (`msgstr == ""`), respetando las ya traducidas.
@@ -26,13 +26,14 @@ Este script permite traducir automáticamente archivos `.po` de módulos de Odoo
 
 Configuración
 ==============
-## 📦 Requisitos
+📦 Requisitos
 
 - Python 3.7 o superior
 - Librerías necesarias:
 
 ```bash
 pip install polib requests
+```
 
 🖥️ Uso
 =======
@@ -40,10 +41,14 @@ Ejecuta el script con los nombres del archivo de entrada y salida como argumento
 
 ```bash
 python TRADUCTOR DE ARCHIVOS - PO.py archivo_entrada.po archivo_salida.po
+```
+
 🔁 Ejemplo:
 ===========
+
 ```bash
 python TRADUCTOR DE ARCHIVOS - PO.py product.pot product_es.po
+```
 Esto leerá el archivo product.pot, traducirá todas las cadenas que no tengan traducción (msgstr vacío), y generará un nuevo archivo llamado product_es.po con las traducciones aplicadas.
 📌 Consideraciones
 ===================
