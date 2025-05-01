@@ -31,24 +31,24 @@ Configuración
 - Python 3.7 o superior
 - Librerías necesarias:
 
-``bash
+```bash
 pip install polib requests
-``
+```
 
 🖥️ Uso
 =======
 Ejecuta el script con los nombres del archivo de entrada y salida como argumentos:
 
-``bash
+```bash
 python TRADUCTOR DE ARCHIVOS - PO.py archivo_entrada.po archivo_salida.po
-``
+```
 
 🔁 Ejemplo:
 ===========
 
-``bash
+```bash
 python TRADUCTOR DE ARCHIVOS - PO.py product.pot product_es.po
-``
+```
 
 Esto leerá el archivo product.pot, traducirá todas las cadenas que no tengan traducción (msgstr vacío), y generará un nuevo archivo llamado product_es.po con las traducciones aplicadas.
 📌 Consideraciones
